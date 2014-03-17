@@ -70,7 +70,7 @@ function myDriver(opts,app) {
       {
         self.emit('register', new Device(this, opts.deviceList[i].type, opts.deviceList[i].id, opts.deviceList[i].name));
       }
-
+      // if we detected an energy meter
       self.emit('register', new Device(this,"Energy","0000", "Energy Monitor"));
     }
 
